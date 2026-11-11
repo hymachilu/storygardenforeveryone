@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- BASIC WEBSITE SETTINGS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE SEO SETTINGS -->
+    <title>Story Garden for Everyone| Fairy Tales, Moral Stories & Adventures</title>
+
+    <meta name="description"
+    content="Welcome to Story Garden! Discover beautiful fairy tales, moral stories, bedtime stories, adventure stories and inspiring stories for everyone.">
+
+    <meta name="keywords"
+    content="Story Garden, fairy tales, moral stories, bedtime stories, kids stories, adventure stories, short stories">
+
+    <meta name="author" content="Story Garden">
+
+    <meta name="robots" content="index, follow">
+
+    <!-- SOCIAL MEDIA SHARING -->
+    <meta property="og:title"
+    content="Story Garden - Discover Wonderful Stories">
+
+    <meta property="og:description"
+    content="Explore magical fairy tales, moral stories and exciting adventures at Story Garden.">
+
+    <meta property="og:type" content="website">
+
+    <!-- WEBSITE ICON (OPTIONAL) -->
+    <!-- Add your favicon link here if you have one -->
+
+    <!-- CONNECT CSS FILE -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CONNECT JAVASCRIPT FILE -->
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <a href="#home" class="logo">🌿 Story Garden</a>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Toggle navigation" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="navbar" id="navbar">
+            <a href="#home">Home</a>
+            <a href="#discover">Discover</a>
+            <a href="#categories">Categories</a>
+            <a href="#about">About</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- HOME SECTION -->
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">A WORLD OF IMAGINATION</p>
+
+                <h1>Every Story Opens a New World</h1>
+
+                <p>
+                    Discover magical tales, inspiring adventures
+                    and beautiful stories for every reader.
+                </p>
+
+                <a href="#discover" class="primary-btn">
+                    Explore Stories
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- DISCOVER SECTION -->
+        <section class="section" id="discover">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">EXPLORE OUR COLLECTION</p>
+
+                <h2>Discover Wonderful Stories</h2>
+
+                <p>Find your next favourite story.</p>
+
+            </div>
+
+            <!-- SEARCH -->
+            <div class="search-box">
+
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Search by story title or category..."
+                    aria-label="Search stories"
+                >
+
+                <button id="searchButton">Search</button>
+
+            </div>
+
+            <!-- CATEGORY FILTER -->
+            <div class="filter-bar">
+
+                <label for="categoryFilter">Filter by category:</label>
+
+                <select id="categoryFilter">
+
+                    <option value="all">All Categories</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Adventure">Adventure</option>
+                    <option value="Moral">Moral</option>
+                    <option value="Fairy Tales">Fairy Tales</option>
+                    <option value="Mystery">Mystery</option>
+
+                </select>
+
+            </div>
+
+            <div class="results-info" id="resultsInfo"
+                 aria-live="polite"></div>
+
+            <div class="story-grid" id="storyResults"></div>
+
+        </section>
+
+        <!-- CATEGORIES SECTION -->
+        <section class="section categories-section" id="categories">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">CHOOSE YOUR JOURNEY</p>
+
+                <h2>Explore Categories</h2>
+
+            </div>
+
+            <div class="category-grid">
+
+                <button class="category-card" data-category="Fantasy">
+                    🪄 <span>Fantasy</span>
+                </button>
+
+                <button class="category-card" data-category="Adventure">
+                    🏕️ <span>Adventure</span>
+                </button>
+
+                <button class="category-card" data-category="Moral">
+                    💚 <span>Moral Stories</span>
+                </button>
+
+                <button class="category-card" data-category="Fairy Tales">
+                    🧚 <span>Fairy Tales</span>
+                </button>
+
+                <button class="category-card" data-category="Mystery">
+                    🔍 <span>Mystery</span>
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section class="section about-section" id="about">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">OUR LITTLE WORLD</p>
+
+                <h2>About Story Garden</h2>
+
+                <p>
+                    Story Garden is a place where imagination grows.
+                    Explore stories that entertain, inspire and teach
+                    valuable lessons.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- STORY READING SECTION -->
+        <section class="reader-section" id="readerSection" hidden>
+
+            <button id="backButton" class="secondary-btn">
+                ← Back to stories
+            </button>
+
+            <article id="storyReader" class="story-reader"></article>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <p>🌿 Story Garden – Where Every Story Blooms.</p>
+
+        <p>
+            © <span id="year"></span> Story Garden.
+            All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
